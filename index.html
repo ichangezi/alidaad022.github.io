@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Website</title>
+    <style>
+        /* General Reset */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Header Section */
+        header {
+            background: #222;
+            color: white;
+            padding: 15px 20px;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .contact {
+            display: flex;
+            align-items: center;
+        }
+
+        .contact input {
+            margin-left: 15px;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1em;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* Service Section */
+        .service-cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 15px;
+            width: 300px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            font-size: 1.2em;
+            color: #444;
+        }
+
+        .card p {
+            color: #666;
+            font-size: 0.9em;
+            margin: 10px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            background: teal;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.9em;
+        }
+
+        .btn:hover {
+            background: darkcyan;
+        }
+
+        /* Project Section */
+        .project-gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .project {
+            width: 300px;
+            text-align: left;
+        }
+
+        .project img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        /* Blog Section */
+        .post-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .post {
+            width: 300px;
+            text-align: left;
+        }
+
+        .post img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .post h3 {
+            font-size: 1.2em;
+            color: #444;
+        }
+
+        .post p {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        /* Footer */
+        footer {
+            background: #222;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            
+            <div class="contact">
+                <span>info@companyname.com | 0001 800-123456</span>
+                <input type="text" placeholder="Search...">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Work</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <div class="card">
+                <img src="Screenshot 10.png" alt="Service 1">
+                <h3>Business Consulting</h3>
+                <p>Get expert advice to streamline operations, boost growth, and maximize efficiency.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <div class="card">
+                <img src="Screenshot 11.png" alt="Service 2">
+                <h3>Project Management</h3>
+                <p>We help you plan, execute, and complete your projects on time and within budget.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <div class="card">
+                <img src="Screenshot 12.png" alt="Service 3">
+                <h3>IT Solutions</h3>
+                <p>From software development to system integration, we handle all your IT needs.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects">
+        <h2>Latest Projects</h2>
+        <div class="project-gallery">
+            <div class="project">
+                <img src="Screenshot 13.png" alt="Project 1">
+                <p>Project Alpha: A complete business transformation for a tech startup.</p>
+            </div>
+            <div class="project">
+                <img src="Screenshot 14.png" alt="Project 2">
+                <p>Project Beta: Advanced IT solutions implemented for a retail company.</p>
+            </div>
+            <div class="project">
+                <img src="Screenshot 3.png" alt="Project 3">
+                <p>Project Gamma: Marketing strategies that boosted revenue by 40%.</p>
+            </div>
+        </div>
+        <a href="#" class="btn">View More</a>
+    </section>
+
+    <section class="blog-posts">
+        <h2>Blog Posts</h2>
+        <div class="post-grid">
+            <div class="post">
+                <img src="Screenshot 4.png" alt="Blog Post 1">
+                <h3>5 Tips for Better Productivity</h3>
+                <p>Discover actionable tips to increase your workplace productivity.</p>
+            </div>
+            <div class="post">
+                <img src="Screenshot 5.png" alt="Blog Post 2">
+                <h3>Why IT Solutions Matter</h3>
+                <p>Learn how IT solutions can revolutionize your business operations.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Company Name. All rights reserved. | Designed by YourCompany</p>
+    </footer>
+</body>
+</html>
+
